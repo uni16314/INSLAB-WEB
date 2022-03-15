@@ -1,0 +1,65 @@
+@import url('./reset.css');
+@import url('./style.css');
+
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+header nav .logo {
+  width: 170px;
+  height: 54px;
+  background: url('../img/logo_white.png');
+}
+header nav ul {
+  gap: 40px;
+}
+header nav ul li::after {
+  content: '';
+  display: block;
+  font-family: 'Font Awesome 5 Free';
+}
+header nav ul li a {
+  color: white;
+  font-size: 18px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+main .slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../img/main_back_img.png') no-repeat 0 0 / cover;
+}
+main .slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .slider * {
+  z-index: 1;
+}
+main .slider h2 {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+section {
+  width: 100vw;
+}
+section #intro {
+  margin: 100px auto;
+  text-align: center;
+  line-height: 2;
+}
