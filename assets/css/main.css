@@ -7,17 +7,24 @@ header {
   top: 0;
   left: 0;
   z-index: 99999;
+  padding: 15px 0;
 }
 header nav .logo {
-  width: 170px;
-  height: 54px;
-  background: url('../img/logo_white.png');
+  width: 98px;
+  height: 40px;
+  background: url('../img/logo_white.png') no-repeat 0 0 /cover;
+  opacity: .8;
+  transition: opacity 0.3s;
+}
+header nav .logo:hover {
+  opacity: 1;
+
 }
 header nav ul {
   gap: 40px;
 }
 header nav ul li::after {
-  content: '';
+  content: '\f107';
   display: block;
   font-family: 'Font Awesome 5 Free';
 }
