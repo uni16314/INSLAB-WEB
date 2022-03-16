@@ -1,4 +1,10 @@
 /* Style */
+:root{
+  --main: #a4cd38;
+  --colorDark: #007681;
+  --colorLight: #00baec;
+}
+
 /* html { font-size: 10px;}
 body { overflow-x:hidden; font-size: 1rem;}
 body.hidden { position: fixed; overflow-y:hidden;  touch-action: none;} */
@@ -26,6 +32,7 @@ legend,
   display: inline-block;
   font-size: 32px;
   font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .title-bar span:after {
