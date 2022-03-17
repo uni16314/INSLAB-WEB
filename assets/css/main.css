@@ -63,16 +63,13 @@ main .slider h2 {
 
 section {
   width: 100vw;
-  margin-bottom:300px;
+  margin: 250px 0;
 }
 section #intro {
-  margin-top: 80px;
   margin-bottom: 100px;
   text-align: center;
   line-height: 2;
 }
-
-/** ------------------- Search Areas ------------------- **/
 
 section #tab {
   line-height: 2;
@@ -91,128 +88,81 @@ section #tab .tab-menu ul {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 section #tab .tab-menu ul li {
-  padding: 5px;
+  padding: 10px 5px;
   flex: 1;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  background: #ebebeb;
-  border-bottom: #b9b9b9;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #e8e8e8;
 }
 
 section #tab .tab-menu ul li.active,
 section #tab .tab-menu ul li:hover {
-  background-color: white;
-  border: 1px solid #b9b9b970;
-  border-bottom: #fff;
+  background-color: var(--main);
 }
 
 section #tab .tab-menu ul li a {
   display: block;
   width: 100%;
-  color: #626262;
+  color: black;
   font-size: 18px;
   font-weight: 600;
-  
   transition: color cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 section #tab .tab-menu ul li:hover a,
 section #tab .tab-menu ul li.active a{
-  color: var(--colorDark);
+  color: #f1f1f1;
 }
 
-/** ------------------- tab > contents ------------------- **/
-
 section #tab .tab-box {
+  background: ivory;
   display: flex;
   align-items: center;
   justify-content:space-evenly;
-  padding: 85px 0;
-  border: 1px solid #b9b9b970;
-  border-top:none;
+  padding: 72px 0;
 }
-#tab .tab-box .frame{
-  width: 480px;
-  height: 300px;
-  margin: 0 100px;
-  overflow: hidden;
 
+section #tab .tab-box .content-img {
+  width: 400px;
+  height: 260px;
+  background: #666666;
+  margin: 0 100px;
 }
-#tab .tab-box .frame .content-img {
-  width: 480px;
-  height: 300px;
-  /*사진 바꾸면 됩니다*/
-  background: url('../img/tab01.jpg') no-repeat 0 0 /cover;
-  transform: scale(1);
-  filter: grayscale(100%) blur(1.5px);
-  transition: all 0.5s;
-}
-#tab .tab-box .frame:hover .content-img{
-  transform: scale(1.02);
-  filter: none;
-}
+
 section #tab .tab-box ul{
   text-align: left;
   width: 400px;
   margin: 0 100px;
 }
 
-/** ------------------- prj ------------------- **/
-
 #prj .title{
   margin: 0 auto;
   text-align: center;
   margin-bottom: 40px;
 }
-#prj .swiper{
-  width: 1210px;
-  height: 600px;
-  padding: 20px 50px;
-  position: relative;
-}
-#prj .btn-prev,
-#prj .btn-next{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 48px;
-  color: #cfcfcf60;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-#prj .btn-prev:hover,#prj .btn-next:hover{
-  color: var(--main);
-}
-#prj .btn-prev{
-  left:0;
-}
-#prj .btn-next{
-  right: 0;
-}
 
-#prj .swiper-wrapper{
-  width: 1200px;
-}
 #prj article{
-  width: 320px !important; 
+  width: 320px;
   height: 480px;
   box-shadow: 4px -8px 15px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
   border-radius: 30px;
   position: relative;
+
 }
 
-.thumb-img{
+#prj .thumb-img{
   width: 310px;
   height: 200px;
-  background: var(--colorLight);
+  background: tomato;
   margin: 0 auto;
 }
 
-.art-contents{
+#prj .art-contents{
   width: 310px;
   margin-top: 20px;
   padding-left: 5px;
@@ -223,7 +173,7 @@ section #tab .tab-box ul{
   margin-bottom: 10px;
 }
 
-#prj .slide-wrap article .box-more{
+#prj article .box-more{
   display: block;
   position: absolute;
   bottom: 20px;
