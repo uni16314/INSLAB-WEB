@@ -8,6 +8,7 @@
   <title>INSLAB</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -47,8 +48,8 @@
       </div>
 
       <div id="one" class="tab-box">
-        <div class="content-img">
-          
+        <div class="frame">
+          <div class="content-img"></div>
         </div>
         <ul>
           <li>Multiple Network interface control</li>
@@ -74,45 +75,105 @@
 
   <section id="prj">
     <div class="title">Project</div>
-    <div class="container df aic jcsb">
-      <article>
-        <div class="thumb-img"></div>
-        <div class="art-contents">
-          <div class="art-tt">혁신조달 연계형 R&D 사업</div>
-          <p>
-            Lorem Ipindustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
-          </p>
-        </div>
-        <a href="#" class="box-more">More<i class="fa-solid fa-arrow-right-long"></i></a>
-      </article>
-      <article>
-        <div class="thumb-img"></div>
-        <div class="art-contents">
-          <div class="art-tt">혁신조달 연계형 R&D 사업</div>
-          <p>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to make a type specimen book.
-          </p>
-        </div>
-        <a href="#" class="box-more">More<i class="fa-solid fa-arrow-right-long"></i></a>
-      </article>
-      <article>
-        <div class="thumb-img"></div>
-        <div class="art-contents">
-          <div class="art-tt">혁신조달 연계형 R&D 사업</div>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          </p>
-        </div>
-        <a href="#" class="box-more">More<i class="fa-solid fa-arrow-right-long"></i></a>
-      </article>
+    <div class="swiper mySwiper">
+      <div class="df aic jcsb swiper-wrapper">
+        <article class="swiper-slide">
+          <div class="thumb-img"></div>
+          <div class="art-contents">
+            <div class="art-tt">혁신조달 연계형 R&D 사업</div>
+            <p>
+              Lorem Ipindustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+              and
+              scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <a href="#" class="box-more">More<i class="fa-solid fa-arrow-right-long"></i></a>
+        </article>
+        <article class="swiper-slide">
+          <div class="thumb-img"></div>
+          <div class="art-contents">
+            <div class="art-tt">혁신조달 연계형 R&D 사업</div>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+              a
+              galley of type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <a href="#" class="box-more">More<i class="fa-solid fa-arrow-right-long"></i></a>
+        </article>
+        <article class="swiper-slide">
+          <div class="thumb-img"></div>
+          <div class="art-contents">
+            <div class="art-tt">혁신조달 연계형 R&D 사업</div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            </p>
+          </div>
+          <a href="#" class="box-more">More<i class="fa-solid fa-arrow-right-long"></i></a>
+        </article>
+        <article class="swiper-slide">
+          <div class="thumb-img"></div>
+          <div class="art-contents">
+            <div class="art-tt">혁신조달 연계형 R&D 사업</div>
+            <p>
+              Lorem Ipindustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+              and
+              scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <a href="#" class="box-more">More<i class="fa-solid fa-arrow-right-long"></i></a>
+        </article>
+        <article class="swiper-slide">
+          <div class="thumb-img"></div>
+          <div class="art-contents">
+            <div class="art-tt">혁신조달 연계형 R&D 사업</div>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+              a
+              galley of type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <a href="#" class="box-more">More<i class="fa-solid fa-arrow-right-long"></i></a>
+        </article>
+        <article class="swiper-slide">
+          <div class="thumb-img"></div>
+          <div class="art-contents">
+            <div class="art-tt">혁신조달 연계형 R&D 사업</div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            </p>
+          </div>
+          <a href="#" class="box-more">More<i class="fa-solid fa-arrow-right-long"></i></a>
+        </article>
 
+      </div>
+      <div class="btn-prev"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="btn-next"><i class="fa-solid fa-angle-right"></i></div>
     </div>
   </section>
 
-  <footer></footer>
+  <footer>
+
+  </footer>
   <script src="https://kit.fontawesome.com/a078b2b7e3.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      // loop: true,
+      spaceBetween: 65,
+      slidesPerGroup: 3,
+      loop: true,
+      speed:1000,
+      navigation: {
+        nextEl: ".btn-next",
+        prevEl: ".btn-prev",
+      },
+      centeredSlides: true
+    })
+  </script>
 </body>
 
 </html>
