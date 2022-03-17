@@ -72,6 +72,8 @@ section #intro {
   line-height: 2;
 }
 
+/** ------------------- Search Areas ------------------- **/
+
 section #tab {
   line-height: 2;
   text-align: center;
@@ -122,6 +124,8 @@ section #tab .tab-menu ul li.active a{
   color: var(--colorDark);
 }
 
+/** ------------------- tab > contents ------------------- **/
+
 section #tab .tab-box {
   display: flex;
   align-items: center;
@@ -130,19 +134,34 @@ section #tab .tab-box {
   border: 1px solid #b9b9b970;
   border-top:none;
 }
-
-section #tab .tab-box .content-img {
+#tab .tab-box .frame{
   width: 480px;
   height: 300px;
-  background: #b9b9b9;
   margin: 0 100px;
-}
+  overflow: hidden;
 
+}
+#tab .tab-box .frame .content-img {
+  width: 480px;
+  height: 300px;
+  /*사진 바꾸면 됩니다*/
+  background: url('../img/tab01.jpg') no-repeat 0 0 /cover;
+  transform: scale(1);
+  filter: grayscale(100%) blur(1.5px);
+  transition: all 0.5s;
+}
+#tab .tab-box .frame:hover .content-img{
+  transform: scale(1.02);
+  filter: none;
+}
 section #tab .tab-box ul{
   text-align: left;
   width: 400px;
   margin: 0 100px;
 }
+
+/** ------------------- prj ------------------- **/
+
 #prj .title{
   margin: 0 auto;
   text-align: center;
