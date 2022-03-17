@@ -88,48 +88,52 @@ section #tab .tab-menu ul {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: flex-end;
 }
 
 section #tab .tab-menu ul li {
-  padding: 10px 5px;
+  padding: 5px;
   flex: 1;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background: #e8e8e8;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background: #ebebeb;
+  border-bottom: #b9b9b9;
 }
 
 section #tab .tab-menu ul li.active,
 section #tab .tab-menu ul li:hover {
-  background-color: var(--main);
+  background-color: white;
+  border: 1px solid #b9b9b970;
+  border-bottom: #fff;
 }
 
 section #tab .tab-menu ul li a {
   display: block;
   width: 100%;
-  color: black;
+  color: #626262;
   font-size: 18px;
   font-weight: 600;
+  
   transition: color cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 section #tab .tab-menu ul li:hover a,
 section #tab .tab-menu ul li.active a{
-  color: #f1f1f1;
+  color: var(--colorDark);
 }
 
 section #tab .tab-box {
-  background: ivory;
   display: flex;
   align-items: center;
   justify-content:space-evenly;
-  padding: 72px 0;
+  padding: 85px 0;
+  border: 1px solid #b9b9b970;
+  border-top:none;
 }
 
 section #tab .tab-box .content-img {
-  width: 400px;
-  height: 260px;
-  background: #666666;
+  width: 480px;
+  height: 300px;
+  background: #b9b9b9;
   margin: 0 100px;
 }
 

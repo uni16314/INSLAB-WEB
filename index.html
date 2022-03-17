@@ -8,6 +8,10 @@
   <title>INSLAB</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -111,8 +115,16 @@
     </div>
   </section>
 
-  <footer></footer>
+  <footer>
+    
+  </footer>
   <script src="https://kit.fontawesome.com/a078b2b7e3.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    const swiper = new Swiper(...)
+  </script>
 </body>
 
 </html>
