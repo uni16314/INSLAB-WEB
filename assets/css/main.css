@@ -1,5 +1,5 @@
-@import url("./reset.css");
-@import url("./style.css");
+@import url('./reset.css');
+@import url('./style.css');
 
 header {
   width: 100vw;
@@ -12,7 +12,7 @@ header {
 header nav .logo {
   width: 98px;
   height: 40px;
-  background: url("../img/logo_white.png") no-repeat 0 0 / cover;
+  background: url('../img/logo_white.png') no-repeat 0 0 / cover;
   opacity: 0.9;
   transition: opacity 0.3s;
 }
@@ -23,9 +23,9 @@ header nav ul {
   gap: 40px;
 }
 header nav ul li::after {
-  content: "\f107";
+  /* content: "\f107";
   display: block;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free"; */
 }
 header nav ul li a {
   color: white;
@@ -40,10 +40,10 @@ main .slider {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url("../img/main_back_img.png") no-repeat 0 0 / cover;
+  background: url('../img/main_back_img.png') no-repeat 0 0 / cover;
 }
 main .slider::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -63,7 +63,7 @@ main .slider h2 {
 
 section {
   width: 100vw;
-  margin-bottom:300px;
+  margin-bottom: 300px;
 }
 section #intro {
   margin-top: 80px;
@@ -116,11 +116,11 @@ section #tab .tab-menu ul li a {
   color: #626262;
   font-size: 18px;
   font-weight: 600;
-  
-  transition: color cubic-bezier(0.215, 0.610, 0.355, 1);
+
+  transition: color cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 section #tab .tab-menu ul li:hover a,
-section #tab .tab-menu ul li.active a{
+section #tab .tab-menu ul li.active a {
   color: var(--colorDark);
 }
 
@@ -129,32 +129,31 @@ section #tab .tab-menu ul li.active a{
 section #tab .tab-box {
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   padding: 85px 0;
   border: 1px solid #b9b9b970;
-  border-top:none;
+  border-top: none;
 }
-#tab .tab-box .frame{
+#tab .tab-box .frame {
   width: 480px;
   height: 300px;
   margin: 0 100px;
   overflow: hidden;
-
 }
 #tab .tab-box .frame .content-img {
   width: 480px;
   height: 300px;
   /*사진 바꾸면 됩니다*/
-  background: url('../img/tab01.jpg') no-repeat 0 0 /cover;
+  background: url('../img/tab01.jpg') no-repeat 0 0 / cover;
   transform: scale(1);
   filter: grayscale(100%) blur(1.5px);
   transition: all 0.5s;
 }
-#tab .tab-box .frame:hover .content-img{
+#tab .tab-box .frame:hover .content-img {
   transform: scale(1.02);
   filter: none;
 }
-section #tab .tab-box ul{
+section #tab .tab-box ul {
   text-align: left;
   width: 400px;
   margin: 0 100px;
@@ -162,19 +161,19 @@ section #tab .tab-box ul{
 
 /** ------------------- prj ------------------- **/
 
-#prj .title{
+#prj .title {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 40px;
 }
-#prj .swiper{
+#prj .swiper {
   width: 1210px;
   height: 600px;
   padding: 20px 50px;
   position: relative;
 }
 #prj .btn-prev,
-#prj .btn-next{
+#prj .btn-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -183,21 +182,22 @@ section #tab .tab-box ul{
   cursor: pointer;
   transition: color 0.3s;
 }
-#prj .btn-prev:hover,#prj .btn-next:hover{
+#prj .btn-prev:hover,
+#prj .btn-next:hover {
   color: var(--main);
 }
-#prj .btn-prev{
-  left:0;
+#prj .btn-prev {
+  left: 0;
 }
-#prj .btn-next{
+#prj .btn-next {
   right: 0;
 }
 
-#prj .swiper-wrapper{
+#prj .swiper-wrapper {
   width: 1200px;
 }
-#prj article{
-  width: 320px !important; 
+#prj article {
+  width: 320px !important;
   height: 480px;
   box-shadow: 4px -8px 15px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
@@ -205,25 +205,25 @@ section #tab .tab-box ul{
   position: relative;
 }
 
-.thumb-img{
+.thumb-img {
   width: 310px;
   height: 200px;
   background: var(--colorLight);
   margin: 0 auto;
 }
 
-.art-contents{
+.art-contents {
   width: 310px;
   margin-top: 20px;
   padding-left: 5px;
 }
-#prj .art-contents .art-tt{
+#prj .art-contents .art-tt {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-#prj .slide-wrap article .box-more{
+#prj .slide-wrap article .box-more {
   display: block;
   position: absolute;
   bottom: 20px;
@@ -232,11 +232,26 @@ section #tab .tab-box ul{
   align-items: center;
   font-size: 18px;
   color: black;
-  
 }
 
-#prj article .box-more i{
+#prj article .box-more i {
   margin-left: 10px;
   font-size: 18px;
   color: #c5c5c5;
+}
+
+footer {
+  background: #404040;
+  padding: 50px 0;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer nav ul li a {
+  color: white;
 }
